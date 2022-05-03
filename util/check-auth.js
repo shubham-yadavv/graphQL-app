@@ -8,7 +8,7 @@ const SECRET_KEY = process.env.SECRET_KEY;
 
 
 module.exports = (context) => {
-    // context = { ... headers }
+    
     const authHeader = context.req.headers.authorization;
     if (authHeader) {
       // Bearer ....
