@@ -22,7 +22,7 @@ module.exports = {
           body,
           username,
           createdAt: new Date().toISOString()
-        });
+        })
         await post.save();
         return post;
       } else throw new UserInputError('Post not found');
